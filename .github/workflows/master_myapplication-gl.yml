@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: glacrdemo.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_11a0e170449f4e9393fd7910a3cac6e2 }}/webimage:${{ github.sha }}
-        file: ./Dockerfile
+        context: dotnet
 
   deploy:
     runs-on: ubuntu-latest
